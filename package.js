@@ -19,6 +19,8 @@ Package.onUse(function (api) {
   api.use('clinical:base-model@1.3.5');
   api.use('clinical:hl7-resource-datatypes@0.6.0');
 
+  api.imply('clinical:hl7-resource-datatypes');
+
   api.addFiles('lib/AllergyIntolerance.js');
   api.addFiles('lib/Appointment.js');
   api.addFiles('lib/Binary.js');
@@ -34,7 +36,7 @@ Package.onUse(function (api) {
   api.addFiles('lib/Encounter.js');
   api.addFiles('lib/FamilyMemberHistory.js');
   api.addFiles('lib/Goal.js');
-  api.addFiles('lib/HealthCareService.js');
+  api.addFiles('lib/HealthcareService.js');
   api.addFiles('lib/ImagingStudy.js');
   api.addFiles('lib/Immunization.js');
   api.addFiles('lib/Location.js');
@@ -46,6 +48,7 @@ Package.onUse(function (api) {
   api.addFiles('lib/Order.js');
   api.addFiles('lib/Organization.js');
   api.addFiles('lib/Patient.js');
+  api.addFiles('lib/Person.js');
   api.addFiles('lib/Practitioner.js');
   api.addFiles('lib/Procedure.js');
   api.addFiles('lib/ProcedureRequest.js');
@@ -73,7 +76,7 @@ Package.onUse(function (api) {
   api.export('Encounter');
   api.export('FamilyMemberHistory');
   api.export('Goal');
-  api.export('HealthCareService');
+  api.export('HealthcareService');
   api.export('ImagingStudy');
   api.export('Immunization');
   api.export('Location');
@@ -85,6 +88,7 @@ Package.onUse(function (api) {
   api.export('Order');
   api.export('Organization');
   api.export('Patient');
+  api.export('Person');
   api.export('Practitioner');
   api.export('Procedure');
   api.export('ProcedureRequest');
@@ -110,10 +114,10 @@ Package.onUse(function (api) {
   api.export('DiagnosticReports');
   api.export('DocumentReferences');
   api.export('Encounters');
-  api.export('FamilyMemberHistorys');
+  api.export('FamilyMemberHistories');
   api.export('Goals');
-  api.export('HealthCareServices');
-  api.export('ImagingStudys');
+  api.export('HealthcareServices');
+  api.export('ImagingStudies');
   api.export('Immunizations');
   api.export('Locations');
   api.export('Medications');
@@ -124,6 +128,7 @@ Package.onUse(function (api) {
   api.export('Orders');
   api.export('Organizations');
   api.export('Patients');
+  api.export('Persons');
   api.export('Practitioners');
   api.export('Procedures');
   api.export('ProcedureRequests');
@@ -151,7 +156,7 @@ Package.onUse(function (api) {
   api.export('EncounterSchema');
   api.export('FamilyMemberHistorySchema');
   api.export('GoalSchema');
-  api.export('HealthCareServiceSchema');
+  api.export('HealthcareServiceSchema');
   api.export('ImagingStudySchema');
   api.export('ImmunizationSchema');
   api.export('LocationSchema');
@@ -163,6 +168,7 @@ Package.onUse(function (api) {
   api.export('OrderSchema');
   api.export('OrganizationSchema');
   api.export('PatientSchema');
+  api.export('PersonSchema');
   api.export('PractitionerSchema');
   api.export('ProcedureSchema');
   api.export('ProcedureRequestSchema');
