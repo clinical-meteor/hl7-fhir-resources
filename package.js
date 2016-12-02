@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:hl7-fhir-resources',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'HL7 FHIR Resources',
   git: 'https://github.com/clinical-meteor/hl7-fhir-resources',
   documentation: 'README.md'
@@ -19,44 +19,44 @@ Package.onUse(function (api) {
   api.use('clinical:base-model@1.3.5');
   api.use('clinical:hl7-resource-datatypes@0.6.0');
 
-  api.addFiles('lib/AllergyIntolerance');
-  api.addFiles('lib/Appointment');
-  api.addFiles('lib/Binary');
-  api.addFiles('lib/Bundle');
-  api.addFiles('lib/CarePlan');
-  api.addFiles('lib/ClinicalImpression');
-  api.addFiles('lib/Condition');
-  api.addFiles('lib/Coverage');
-  api.addFiles('lib/Device');
-  api.addFiles('lib/DiagnosticOrder');
-  api.addFiles('lib/DiagnosticReport');
-  api.addFiles('lib/DocumentReference');
-  api.addFiles('lib/Encounter');
-  api.addFiles('lib/FamilyMemberHistory');
-  api.addFiles('lib/Goal');
-  api.addFiles('lib/HealthCareService');
-  api.addFiles('lib/ImagingStudy');
-  api.addFiles('lib/Immunization');
-  api.addFiles('lib/Location');
-  api.addFiles('lib/Medication');
-  api.addFiles('lib/MedicationOrder');
-  api.addFiles('lib/MedicationStatement');
-  api.addFiles('lib/MessageHeader');
-  api.addFiles('lib/Observation');
-  api.addFiles('lib/Order');
-  api.addFiles('lib/Organization');
-  api.addFiles('lib/Patient');
-  api.addFiles('lib/Practitioner');
-  api.addFiles('lib/Procedure');
-  api.addFiles('lib/ProcedureRequest');
-  api.addFiles('lib/Questionnaire');
-  api.addFiles('lib/QuestionnaireResponse');
-  api.addFiles('lib/RelatedPerson');
-  api.addFiles('lib/RiskAssessment');
-  api.addFiles('lib/Schedule');
-  api.addFiles('lib/Sequence');
-  api.addFiles('lib/Slot');
-  api.addFiles('lib/Specimen');
+  api.addFiles('lib/AllergyIntolerance.js');
+  api.addFiles('lib/Appointment.js');
+  api.addFiles('lib/Binary.js');
+  api.addFiles('lib/Bundle.js');
+  api.addFiles('lib/CarePlan.js');
+  api.addFiles('lib/ClinicalImpression.js');
+  api.addFiles('lib/Condition.js');
+  api.addFiles('lib/Coverage.js');
+  api.addFiles('lib/Device.js');
+  api.addFiles('lib/DiagnosticOrder.js');
+  api.addFiles('lib/DiagnosticReport.js');
+  api.addFiles('lib/DocumentReference.js');
+  api.addFiles('lib/Encounter.js');
+  api.addFiles('lib/FamilyMemberHistory.js');
+  api.addFiles('lib/Goal.js');
+  api.addFiles('lib/HealthCareService.js');
+  api.addFiles('lib/ImagingStudy.js');
+  api.addFiles('lib/Immunization.js');
+  api.addFiles('lib/Location.js');
+  api.addFiles('lib/Medication.js');
+  api.addFiles('lib/MedicationOrder.js');
+  api.addFiles('lib/MedicationStatement.js');
+  api.addFiles('lib/MessageHeader.js');
+  api.addFiles('lib/Observation.js');
+  api.addFiles('lib/Order.js');
+  api.addFiles('lib/Organization.js');
+  api.addFiles('lib/Patient.js');
+  api.addFiles('lib/Practitioner.js');
+  api.addFiles('lib/Procedure.js');
+  api.addFiles('lib/ProcedureRequest.js');
+  api.addFiles('lib/Questionnaire.js');
+  api.addFiles('lib/QuestionnaireResponse.js');
+  api.addFiles('lib/RelatedPerson.js');
+  api.addFiles('lib/RiskAssessment.js');
+  api.addFiles('lib/Schedule.js');
+  api.addFiles('lib/Sequence.js');
+  api.addFiles('lib/Slot.js');
+  api.addFiles('lib/Specimen.js');
 
   api.export('AllergyIntolerance');
   api.export('Appointment');
