@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'clinical:hl7-resource-allergy-intolerance',
-  version: '1.0.3',
-  summary: 'HL7 FHIR Resource - AllergyIntolerance',
-  git: 'https://github.com/clinical-meteor/hl7-resource-allergy-intolerance',
+  name: 'clinical:hl7-fhir-resources',
+  version: '1.0.0',
+  summary: 'HL7 FHIR Resources',
+  git: 'https://github.com/clinical-meteor/hl7-fhir-resources',
   documentation: 'README.md'
 });
 
@@ -19,11 +19,160 @@ Package.onUse(function (api) {
   api.use('clinical:base-model@1.3.5');
   api.use('clinical:hl7-resource-datatypes@0.6.0');
 
-  api.addFiles('lib/hl7-resource-allergy-intolerance.js', ['client', 'server']);
-  api.addFiles('server/rest.js', 'server');
-  api.addFiles('server/initialize.js', 'server');
+  api.addFiles('lib/AllergyIntolerance');
+  api.addFiles('lib/Appointment');
+  api.addFiles('lib/Binary');
+  api.addFiles('lib/Bundle');
+  api.addFiles('lib/CarePlan');
+  api.addFiles('lib/ClinicalImpression');
+  api.addFiles('lib/Condition');
+  api.addFiles('lib/Coverage');
+  api.addFiles('lib/Device');
+  api.addFiles('lib/DiagnosticOrder');
+  api.addFiles('lib/DiagnosticReport');
+  api.addFiles('lib/DocumentReference');
+  api.addFiles('lib/Encounter');
+  api.addFiles('lib/FamilyMemberHistory');
+  api.addFiles('lib/Goal');
+  api.addFiles('lib/HealthCareService');
+  api.addFiles('lib/ImagingStudy');
+  api.addFiles('lib/Immunization');
+  api.addFiles('lib/Location');
+  api.addFiles('lib/Medication');
+  api.addFiles('lib/MedicationOrder');
+  api.addFiles('lib/MedicationStatement');
+  api.addFiles('lib/MessageHeader');
+  api.addFiles('lib/Observation');
+  api.addFiles('lib/Order');
+  api.addFiles('lib/Organization');
+  api.addFiles('lib/Patient');
+  api.addFiles('lib/Practitioner');
+  api.addFiles('lib/Procedure');
+  api.addFiles('lib/ProcedureRequest');
+  api.addFiles('lib/Questionnaire');
+  api.addFiles('lib/QuestionnaireResponse');
+  api.addFiles('lib/RelatedPerson');
+  api.addFiles('lib/RiskAssessment');
+  api.addFiles('lib/Schedule');
+  api.addFiles('lib/Sequence');
+  api.addFiles('lib/Slot');
+  api.addFiles('lib/Specimen');
 
   api.export('AllergyIntolerance');
+  api.export('Appointment');
+  api.export('Binary');
+  api.export('Bundle');
+  api.export('CarePlan');
+  api.export('ClinicalImpression');
+  api.export('Condition');
+  api.export('Coverage');
+  api.export('Device');
+  api.export('DiagnosticOrder');
+  api.export('DiagnosticReport');
+  api.export('DocumentReference');
+  api.export('Encounter');
+  api.export('FamilyMemberHistory');
+  api.export('Goal');
+  api.export('HealthCareService');
+  api.export('ImagingStudy');
+  api.export('Immunization');
+  api.export('Location');
+  api.export('Medication');
+  api.export('MedicationOrder');
+  api.export('MedicationStatement');
+  api.export('MessageHeader');
+  api.export('Observation');
+  api.export('Order');
+  api.export('Organization');
+  api.export('Patient');
+  api.export('Practitioner');
+  api.export('Procedure');
+  api.export('ProcedureRequest');
+  api.export('Questionnaire');
+  api.export('QuestionnaireResponse');
+  api.export('RelatedPerson');
+  api.export('RiskAssessment');
+  api.export('Schedule');
+  api.export('Sequence');
+  api.export('Slot');
+  api.export('Specimen');
+
   api.export('AllergyIntolerances');
+  api.export('Appointments');
+  api.export('Binarys');
+  api.export('Bundles');
+  api.export('CarePlans');
+  api.export('ClinicalImpressions');
+  api.export('Conditions');
+  api.export('Coverages');
+  api.export('Devices');
+  api.export('DiagnosticOrders');
+  api.export('DiagnosticReports');
+  api.export('DocumentReferences');
+  api.export('Encounters');
+  api.export('FamilyMemberHistorys');
+  api.export('Goals');
+  api.export('HealthCareServices');
+  api.export('ImagingStudys');
+  api.export('Immunizations');
+  api.export('Locations');
+  api.export('Medications');
+  api.export('MedicationOrders');
+  api.export('MedicationStatements');
+  api.export('MessageHeaders');
+  api.export('Observations');
+  api.export('Orders');
+  api.export('Organizations');
+  api.export('Patients');
+  api.export('Practitioners');
+  api.export('Procedures');
+  api.export('ProcedureRequests');
+  api.export('Questionnaires');
+  api.export('QuestionnaireResponses');
+  api.export('RelatedPersons');
+  api.export('RiskAssessments');
+  api.export('Schedules');
+  api.export('Sequences');
+  api.export('Slots');
+  api.export('Specimens');
+
   api.export('AllergyIntoleranceSchema');
+  api.export('AppointmentSchema');
+  api.export('BinarySchema');
+  api.export('BundleSchema');
+  api.export('CarePlanSchema');
+  api.export('ClinicalImpressionSchema');
+  api.export('ConditionSchema');
+  api.export('CoverageSchema');
+  api.export('DeviceSchema');
+  api.export('DiagnosticOrderSchema');
+  api.export('DiagnosticReportSchema');
+  api.export('DocumentReferenceSchema');
+  api.export('EncounterSchema');
+  api.export('FamilyMemberHistorySchema');
+  api.export('GoalSchema');
+  api.export('HealthCareServiceSchema');
+  api.export('ImagingStudySchema');
+  api.export('ImmunizationSchema');
+  api.export('LocationSchema');
+  api.export('MedicationSchema');
+  api.export('MedicationOrderSchema');
+  api.export('MedicationStatementSchema');
+  api.export('MessageHeaderSchema');
+  api.export('ObservationSchema');
+  api.export('OrderSchema');
+  api.export('OrganizationSchema');
+  api.export('PatientSchema');
+  api.export('PractitionerSchema');
+  api.export('ProcedureSchema');
+  api.export('ProcedureRequestSchema');
+  api.export('QuestionnaireSchema');
+  api.export('QuestionnaireResponseSchema');
+  api.export('RelatedPersonSchema');
+  api.export('RiskAssessmentSchema');
+  api.export('ScheduleSchema');
+  api.export('SequenceSchema');
+  api.export('SlotSchema');
+  api.export('SpecimenSchema');
+
 });
